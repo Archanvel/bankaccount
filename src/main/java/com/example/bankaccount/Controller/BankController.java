@@ -19,7 +19,6 @@ public class BankController {
     public String viewHomePage(Model model) {
         List<Bank> listbank = service.listAll();
         model.addAttribute("listbank", listbank);
-        System.out.print("Get / ");
         return "bank";
     }
 
