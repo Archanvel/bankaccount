@@ -34,10 +34,10 @@
                     </thead>
                     <tbody>
                     <tr  th:each="bank : ${listbank}">
-                        <td th:text="${bank.id}">Employee ID</td>
-                        <td th:text="${bank.accountName}">Employee Name</td>
-                        <td th:text="${bank.transaction}">Mobile</td>
-                        <td th:text="${bank.amount}">Salary</td>
+                        <td th:text="${bank.id}">Номер транзакции</td>
+                        <td th:text="${bank.accountName}">Имя аккаунта</td>
+                        <td th:text="${bank.transaction}">Транзакция</td>
+                        <td th:text="${bank.amount}">Сумма транзакции</td>
                         <td>
                             <a th:href="@{'/delete/' + ${bank.id}}">Удалить</a>
                         </td>
